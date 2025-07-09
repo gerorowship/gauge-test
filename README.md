@@ -1,13 +1,10 @@
-# Sample Hardhat Project
+# Run
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+```bash
+anvil --fork-url https://hyperliquid.drpc.org --fork-block-number 7919677 --port 8545
+```
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+Por ejemplo para checkear que la Interfaz del gauge es correcta corremos
+```bash
+npx hardhat run scripts/checkGauge.js --network localhost
 ```
